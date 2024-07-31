@@ -1,8 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  /*=========================================================  */
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
 }
-/* shared styles */
+
+/*___________________shared styles__________________________ */
 .display{
     display: flex;
+}
+.grid{
+  display: grid;
+}
+section{
+    margin: 100px auto;
+}
+:root{
+    --paragraph: 1rem;
+    --primary-color: #3a3a3a;
+    --btn-color: #E02C6D;
+    --second-color: #0A0826;
+}
+.btn{
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 41px;
+  border: none;
+  background-color: var(--btn-color);
+}
+.btn2{
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  padding: 10px 24px;
+  /* border-radius: 41px; */
+  border: none;
+  background-color: var(--btn-color);
+}
+.description{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 28px;
+  color: #6C6C6C;
+}
+
+
+/* __________________NAV BAR STYLES__________________________ */
+header, main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav{
+  color: var(--primary-color);
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px auto 0px;
+}
+ul{
+  gap: 34px;
+}
+ul >li{
+  list-style: none;
+}
+
+
+/* __________________HERO SECTION STYLES____________________ */
+.banner{
+  margin-top: 40px;
+  margin-bottom: 70px;
+  align-items: center;
+  justify-content: space-between;
+  /* border: #3a3a3a 1px solid; */
+  /* gap: 130px; */
+}
+.banner-content{
+  max-width: 582px;
+  /* border: 1px solid salmon; */
+}
+.banner h1{
+  color: var(--primary-color);
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 16px;
+}
+.banner p{
+  font-size: var(--paragraph);
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+
+}
+.banner-img{
+  /* border: 1px salmon solid; */
+  background-image: url("images/Circle\ design.svg"); width:fit-content;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.fa-arrow-right{
+  color: white;
+  margin-left: 10px;
+}
+
+
+/* __________________SPONSORS SECTION STYLES____________________ */
+.sponsors-container{
+  max-width: 1110px;
+  border-top: 1px solid rgba(192, 204, 218, 0.6);
+  border-bottom: 1px solid rgba(192, 204, 218, 0.6);
+  padding: 36px 62px;
+  margin-bottom: 100px;
+  
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+/* __________________POPULAR COLLECTION SECTION STYLES____________________ */
+.collection-section{
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.collection-section h1{
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 70px;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 46px;
+}
+.card-container{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.see-more{
+  width: 1047px;
+  justify-content: end;
+  align-items: end;
+  /* border: #E02C6D 1px solid; */
+}
+.item{
+  max-width: 330px;
+  padding: 17px 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+}
+.item img{
+  width: 100%;
+  border-radius: 5px;
+  /* border: #E02C6D 1px solid; */
+}
+.see-more{
+  /* border: #E02C6D 1px solid; */
+  margin-top: 50px;
+}
+.see-more > p, #arrow-right{
+  color: rgba(224, 44, 109, 0.87);
+  font-size: 1rem;
+  font-weight: 700;
+  /* margin-right: 10px; */
+}
+
+
+/* __________________FEATURED SECTION STYLES____________________ */
+.feature-section{
+  justify-content: space-between;
+  align-items: center;
+  /* border: #6C6C6C 1px solid; */
+  max-width: 1110px;
+  /* margin-bottom: 100px; */
+}
+.feature-section .text-container{
+  max-width: 610px;
+}
+.text-container > h1{
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 60px;
+  color: var(--second-color);
+}
+.text-container > p{
+  margin-bottom: 16px;
+}
+
+
+/* __________________FOOTER SECTION STYLES____________________ */
+footer{
+  text-align: center;
+  color: white;
+  height: 240px;
+  background-color: #0A0826;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+footer h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+footer p{
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.icon-container{
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-instagram, .fa-youtube, .fa-x-twitter, .fa-basketball{
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1;
 }
